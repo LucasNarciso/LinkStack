@@ -2,8 +2,8 @@
 
 <hr>
 
-![image](https://github.com/LucasNarciso/GithubStyles/blob/main/Status/GitHub-Status-EM%20DES.-vt.png)
-<img src="https://github.com/LucasNarciso/GithubStyles/blob/main/Status/GitHub-Status-EM%20DES.-vt.png">
+![image](https://user-images.githubusercontent.com/71471494/164953307-08fe84f4-b240-47e6-a2a5-f210c716ab51.png)
+
 
 ## 📑 Descrição
 
@@ -28,7 +28,7 @@
 ## 🔍 Como Usar
 
 <ul>
-  <li> </li>
+  <!--<li> </li>-->
 </ul>
 
 <br>
