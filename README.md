@@ -3,6 +3,7 @@
 <hr>
 
 ![image](https://github.com/LucasNarciso/GithubStyles/blob/main/Status/GitHub-Status-EM%20DES.-vt.png)
+<img src="https://github.com/LucasNarciso/GithubStyles/blob/main/Status/GitHub-Status-EM%20DES.-vt.png">
 
 ## 📑 Descrição
 
