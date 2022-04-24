@@ -1,0 +1,625 @@
+/*
+
+GLOBAL = São classes e IDs que se aplicam em todas as páginas.
+
+NOMEDOARQUIVO.PHP = IDs e Classes que se aplicam apenas na página referente.
+
+*/
+
+/*/////////////////////////////////////////////////
+
+////////////////////    GLOBAL
+
+/////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
+
+/*/  Defini a fonte padrão de todo o site  /*/
+*{
+    font-family: 'Rhodium Libre', serif;
+}
+
+/*/  Cor padrão para o background do site  /*/
+body{
+    background: #105469;
+    /*max-width: 200em;*/
+}
+
+/*/  Tamanho Padrão dos textos do site  /*/
+p{
+    margin: 0.1em;
+    font-size: 1.2em;
+}
+
+/*/  Div responsável por criar separações em todo o site  /*/
+.divSeparacao{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+/*/  Classe que determina atributos do caminho da barra de rolagem  /*/
+::-webkit-scrollbar {
+    width: 0.45em;
+    height: 0.45em;
+    background-color: transparent;
+}
+
+/*/  Classe que determina atributos da barra de rolagem  /*/
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+    border-radius: 1em;
+}
+
+
+/*/////////////////////////////////////////////////
+
+////////////////////    ACESSO.PHP
+
+/////////////////////////////////////////////////*/
+
+.divAcesso{
+    background-color: #296CA6;
+    border-radius: 1em;
+    width: 40em;
+    height: auto;
+    margin: 2em;
+}
+
+.inputAcesso{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 1em;
+    height: auto;
+    margin: 1em;
+    width: 35em;
+}
+
+.inputAcesso input{
+    font-size: 1.6em;
+    outline: none;
+    border: none;
+    width: 20em;
+    background-color: transparent;
+    text-align: center;
+}
+
+.divBotaoAcesso button{
+    border-radius: 0.8em;
+    height: 3em;
+    width: 12em;
+    background-color: rgba(12, 194, 112, 0.85);
+    border: transparent;
+    color: white;
+    margin: 1em;
+    cursor: pointer;
+}
+
+
+/*/////////////////////////////////////////////////
+
+////////////////////    ERRO.PHP
+
+/////////////////////////////////////////////////*/
+
+.divErro{
+    background-color: #296CA6;
+    border-radius: 1em;
+    width: 40em;
+    height: auto;
+    margin: 2em;
+}
+
+.divInternaErro{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 1em;
+    margin: 2em;
+    padding: 2em;
+}
+
+
+/*/////////////////////////////////////////////////
+
+////////////////////    LOGINMEMBRO.PHP
+
+/////////////////////////////////////////////////*/
+
+.divLogin{
+    background-color: rgba(41, 108, 166, 1);
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 1em;
+    min-height: 15em;
+    max-width: 30em;
+    min-width: 10em;
+    margin-top: 5%;
+}
+
+.botaoEntrar{
+    border-radius: 0.8em;
+    height: 3em;
+    width: 12em;
+    background-color: rgba(12, 194, 112, 0.85);
+    border: transparent;
+    color: white;
+    margin-top: 4em;
+    padding: 0em;
+    cursor: pointer;
+}
+
+.botaoEntrar:hover{
+    border: solid;
+    border-color: white;
+}
+
+.divInputsLogin{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.divInputsLogin input{
+    height: 2.5em;
+    max-height: 2em;
+    max-width: 20em;
+    width: 90%;
+    border-radius: 0.8em;
+    outline-color: rgba(41, 108, 166, 1);
+    border-color: transparent;
+    margin-top: -5em;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size:large;
+}
+
+
+/*/////////////////////////////////////////////////
+
+////////////////////    PAINEL.PHP
+
+/////////////////////////////////////////////////*/
+
+.transp{
+    opacity : 0.5
+}
+
+.SwitchDistrib{
+    width: 9em;
+    cursor: pointer;
+}
+
+.hover:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#janela{
+    margin: auto;
+    height: 100%;
+    width: 75em;
+    background-color: #0CC270;
+    border-radius: 0.5em;
+    display: flex;
+}
+
+.formPainel{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.inputCor{
+    width: 4em; 
+    height: 4em;
+}
+
+.divOpcoes{
+    border-radius: 0.5em;
+    width: 100%;
+    max-width: 50em;
+}
+
+#divFotoPainelInterna{
+    background-color: #296CA6;
+    width: 7.5em;
+    height: 7.5em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0.5em;
+    color: white;
+    margin: 0.2em;
+}
+
+#divFotoPainelExterna{
+    height: 9em; 
+    background-color: white;
+    width: 12em;
+    height: 8em;
+    justify-content:left;
+    display: flex;
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+
+#divNomePainel{
+    border: 0.15em solid white;
+    width: 19em;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 2em; 
+    margin: 0.5em;
+    margin-right: 0;
+    border-radius: 0.5em;
+    padding: 0.1em;
+    
+}
+
+.botaoSalvar{
+    margin: 20px;
+    background-color: #0CC270;
+    color: white;
+    border: transparent;
+    outline: transparent;
+    border-radius: 0.5em;
+    width: 9em;
+    height: 3em;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.botaoSalvar:hover{
+    border: transparent;
+    cursor: pointer;
+}
+
+.b{
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.b:hover{
+    box-shadow: 0 0 40px 40px #02874B inset;
+}
+
+.botaoAjuda{
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1em;
+}
+
+.botaoAjuda:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.linha{
+    width: 34em;
+    border: 0.01em solid black;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    padding-right: 0.5em;
+}
+
+.linkCardED{
+    margin-bottom:0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30em; 
+    height: 5.5em;
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+
+.divCards{
+    border-radius: 0.5em;
+    margin-top:0.5em;
+    background-color: RGBA(41, 108, 166, 0.7);
+    height: 39.5em;
+    max-width: 35em;
+}
+
+.divInternaCards{
+    height: 34em;
+    overflow: auto;
+    margin: 0em 0.5em;
+}
+
+.botaoReset{
+    background-color: transparent;
+    border-color: black;
+    padding: 0.5em;
+    cursor: pointer;
+    height: 1.5em;
+    width: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.botaoReset:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.inputLinks{
+    border-radius: 0.3em;
+    width: 28em;
+    height: 2em;
+    margin: 0.4em 0.3em;
+    border: 0.1em solid black;
+    background-color: #D9D9D9;
+}
+
+.inputLinksQTD{
+    border-radius: 0.3em;
+    text-align: center;
+    width: 1.7em;
+    height: 1.5em;
+    margin: 0.2em;
+    border: none;
+    background-color: #D9D9D9;
+    color: black;
+    outline: none;
+}
+
+.buttonLinks{
+    margin: 0.2em;
+    border-radius: 0.3em;
+    width: 2em;
+    height:2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+.BotaoLogOff{
+    border-radius: 0.3em;
+    border:none;
+}
+
+.BotaoLogOff:hover{
+    cursor: pointer;
+    background-color: #dad7d7;
+}
+
+.divBotoesCardGeral{
+    display: flex;
+    width: 20em;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.divBotoesCardInterna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 4em;
+}
+
+/*/////////////////////////////////////////////////
+
+////////////////////    PRINCIPAL.PHP
+
+/////////////////////////////////////////////////*/
+
+.divNomeUser{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.divAviso{
+    background-color: rgba(12, 194, 112, 0.85);
+    border-radius: 0.5em;
+    width: 8em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999999;
+    top: 5%;
+    border: 0.2em solid white;
+    color: white;
+}
+
+.hide{
+    opacity: 0; 
+    transition: opacity 1s ease-out;
+}
+
+.divLinks{
+    background-color: rgba(12, 194, 112, 0.85);
+    width: 35%;
+    max-width: 30em;
+    min-width: 20em;
+    height: 4em;
+    color: white;
+    justify-content: space-between;
+    margin: 1em;
+    border-radius: 0.8em;
+    display: flex;
+}
+
+.card-zoom:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-nenhuma:hover{
+    cursor: pointer;
+}
+
+.card-foco:hover{
+    box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.3) inset;;
+    cursor: pointer;
+}
+
+.divSeparacaoLinks{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.divFoto{
+    width: 6em;
+    height: 6em;
+    background-color: rgba(41, 108, 166, 1);
+    border-radius: 0.5em;
+    border: 0.2em solid white;
+}
+
+.divBotaoShare{
+    padding: 1em;
+}
+
+.botaoShare{
+    background-color: transparent;
+    border-color: black;
+    padding: 0em;
+    border-radius: 2em;
+}
+
+.botaoShare:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.divLogo{
+    margin-top: 4em;
+}
+
+.divInternaIMG{
+    background-color: white;
+    width: 4em;
+    height: 4em;
+    border-radius: 0.8em;
+}
+
+.divInternaLink{
+    width: 22em;
+    height: 4em;
+    border-radius: 0.8em;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divInternaShare{
+    background-color: rgba(41, 108, 166, 1);
+    width: 2.5em;
+    height: 4em;
+    border-top-right-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+}
+
+
+/*/////////////////////////////////////////////////
+
+////////////////////    REGISTRO.PHP
+
+/////////////////////////////////////////////////*/
+
+
+.divRegistro{
+    background-color: rgba(41, 108, 166, 1);
+    width: 24em;
+    height: 20em;
+    color: white;
+    border-radius: 1em;
+}
+
+.linkTermos{
+    color: rgba(11, 219, 156, 1);
+    text-decoration: none;
+    border-radius: 0.2em;
+    font-weight: bold;
+}
+
+.linkTermos:hover{
+    text-decoration: underline;   
+}
+
+.botaoRegistrar{
+    border-radius: 0.8em;
+    height: 3em;
+    width: 12em;
+    background-color: rgba(12, 194, 112, 0.85);
+    border: transparent;
+    color: white;
+    margin-top: 4em;
+    padding: 0em;
+    cursor: pointer;
+}
+
+.botaoRegistrarActive:hover{
+    background-color: rgba(15, 200, 100, 1);
+}
+
+.disable{
+    background-color: gray;
+    border: transparent;
+    color: white;
+    cursor:auto;
+}
+
+.divInputsRegistro{
+    width: 17em;
+    margin: 2em;
+}
+
+.divInputsRegistro input{
+    height: 2.5em;
+    max-height: 2em;
+    width: auto;
+    border-radius: 0.8em;
+    outline-color: rgba(41, 108, 166, 1);
+    border-color: transparent;
+    margin-top: -5em;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size:large;
+}
+
+.infoUser:hover{
+    background-color: rgba(34, 94, 146, 1);
+    border-radius: 1em;
+
+}
+
+.infoPass:hover{
+    background-color: rgba(34, 94, 146, 1);
+    border-radius: 1em;
+}
+
+/*/////////////////////////////////////////////////
+
+////////////////////    TERMOS.PHP
+
+/////////////////////////////////////////////////*/
+
+.divTermos{
+    background-color: white;
+    width: 80em;
+    height: 27em;
+    border-radius: 1em;
+}
