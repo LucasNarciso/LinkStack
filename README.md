@@ -38,6 +38,6 @@
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="25em">](https://code.visualstudio.com) Visual Studio Code
 <br>
-[<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/XAMPP_Logo.png" width="25em">](https://pt-br.reactjs.org) XAMPP (Servidor Local)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/XAMPP_Logo.png" width="25em">](https://www.apachefriends.org/pt_br/index.html) XAMPP (Servidor Local)
 <br>
-[<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" width="50em">](https://pt-br.reactjs.org) MySQL (Banco De Dados)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" width="50em">](https://www.mysql.com) MySQL (Banco De Dados)
